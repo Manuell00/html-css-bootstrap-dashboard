@@ -170,3 +170,9 @@ main {
 #jumbotron-button{
     margin-left: 10px;
 }
+
+/* OFFCANVAS */
+
+.offcanvas{
+    --bs-offcanvas-width: 700px;
+}

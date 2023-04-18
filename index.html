@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+
 <!-- BODY -->
 
 <body>
@@ -115,21 +116,56 @@
                             <!-- Inserisco l'offcanvas di Bootstrap -->
 
                             <!-- Parte inerente al bottone -->
-                            <button class="btn btn-primary" id="jumbotron-button" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+                            <button class="btn btn-primary" id="jumbotron-button" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
 
                             <!-- Parte di lettura -->
                             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                                 aria-labelledby="offcanvasRightLabel">
                                 <!-- Titolo dell'offcanvas -->
                                 <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente
+                                    </h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                         aria-label="Close"></button>
                                 </div>
                                 <!-- Corpo dell'offcanvas -->
                                 <div class="offcanvas-body">
-                                    ...
+                                    <!-- Inserisco una form presa da Bootstrap -->
+                                    <form>
+                                        <!-- Inserisco la prima riga (Nome e Cognome) -->
+                                        <div class="row">
+                                            <div class="col-lg-6 mb-3">
+                                                <label for="name" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" id="name"
+                                                    aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="col-lg-6 mb-3">
+                                                <label for="surname" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control" id="surname"
+                                                    aria-describedby="emailHelp">
+                                            </div>
+                                        </div>
+
+                                        <!-- Inserisco la seconda riga (Email e Password) -->
+                                        <div class="row">
+                                            <div class="col-lg-6 input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                              </div>
+                                            <div class="col-lg-6 mb-3">
+                                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
