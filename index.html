@@ -110,9 +110,11 @@
 
 
                     <!-- Inserisco il terzo blocco del jumbotron -->
-                    <div class="col-lg-3 align-self-start mt-5">
+                    <div class="col-lg-2 align-self-start mt-5">
                         <div> Nuovo Studente
 
+
+                            <!-- OFFCANVAS -->
                             <!-- Inserisco l'offcanvas di Bootstrap -->
 
                             <!-- Parte inerente al bottone -->
@@ -123,6 +125,7 @@
                             <!-- Parte di lettura -->
                             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                                 aria-labelledby="offcanvasRightLabel">
+
                                 <!-- Titolo dell'offcanvas -->
                                 <div class="offcanvas-header">
                                     <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente
@@ -130,9 +133,11 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                         aria-label="Close"></button>
                                 </div>
+
                                 <!-- Corpo dell'offcanvas -->
                                 <div class="offcanvas-body">
-                                    <!-- Inserisco una form presa da Bootstrap -->
+
+                                    <!-- Inserisco le form prese da Bootstrap -->
                                     <form>
                                         <!-- PRIMA RIGA -->
                                         <!-- Inserisco la prima riga (Nome e Cognome) -->
@@ -225,26 +230,44 @@
 
 
 
+                                        <!-- QUINTA RIGA -->
+                                        <!-- Inserisco la quinta riga (Scegli File) -->
+                                        <div class="row">
 
+                                            <!-- Inserisco la cella per il la scelta del file -->
+                                            <div class="col-lg-12 mb-3">
+                                                <label for="foto" class="form-label">Foto</label>
+                                                <div class="input-group mb-3">
+                                                    <input type="file" class="form-control" id="inputGroupFile01">
+                                                  </div>
+                                            </div>
+                                        </div>
 
-
-
+                                        <!-- SUBMIT PART -->
+                                        <div class="mb-3 form-check">
+                                            <!-- Checkbox per proseguire -->
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Selezione per proseguire</label>
+                                        </div>
 
                                         <!-- Tasti per svuotare o inviare -->
-                                        <div class="mb-3 form-check">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                        </div>
                                         <button type="submit" class="btn btn-primary">Salva</button>
+                                        <button type="button" class="btn btn-warning">Svuota</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             </div>
+            <!-- Fine del jumbotron -->
+
+
+
+
+
+
+
         </main>
     </div>
 

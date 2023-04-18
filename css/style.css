@@ -169,6 +169,8 @@ main {
 
 #jumbotron-button{
     margin-left: 10px;
+    border-color: white;
+    background-color: dodgerblue;
 }
 
 /* OFFCANVAS */
