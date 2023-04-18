@@ -135,5 +135,38 @@ main {
     width: calc(100% - 170px);
     height: 100%;
     color: white;
-    padding: 10px;
+}
+
+/* JUMBOTRON */
+/* Definisco il jumbotron */
+
+#jumbotron{
+    height: 150px;
+    background-color: dodgerblue;
+    width: 100%;
+}
+
+#jumbotron>.row{
+    height: 100%;
+}
+
+#jumbotron h3{
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.circle-text-jumbotron{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(2, 95, 188);
+}
+
+#student-jumbotron{
+    margin-top:20px;
+}
+
+#jumbotron-button{
+    margin-left: 10px;
 }

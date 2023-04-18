@@ -42,8 +42,8 @@
         <nav class="navbar bg-body-tertiary">
             <form class="container-fluid">
                 <div class="input-group">
-                    <input type="text" class="form-control" id="form-control-navbar" 
-                    placeholder= "Prova a cercare: Lezioni di Laravel" aria-label="Username"
+                    <input type="text" class="form-control" id="form-control-navbar"
+                        placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username"
                         aria-describedby="basic-addon1">
                 </div>
             </form>
@@ -78,16 +78,66 @@
             </div>
         </div>
 
-            
+
 
 
         <!-- MAIN -->
         <main>
             <!-- Definisco il JUMBOTRON -->
+            <div class="container-fluid" id="jumbotron">
+                <div class="row align-items-center justify-content-between">
+
+                    <!-- Inserisco il primo blocco del jumbotron -->
+                    <div class="col-lg-5">
+                        <h3>Boolean</h3>
+                        <span class="circle-text-jumbotron">Piano blaze</span>
+
+                        <div>
+                            <span class="circle-text-jumbotron">3 app</span>
+                            <span><i class="fa-solid fa-angles-right"></i></span>
+                            <span class="circle-text-jumbotron">Boolean mobile app</span>
+                            <span class="circle-text-jumbotron">Boolean web app</span>
+                            <span class="circle-text-jumbotron">Boolean blog app</span>
+                        </div>
+                    </div>
+
+                    <!-- Inserisco il secondo blocco del jumbotron -->
+                    <div class="col-lg-3 align-self-start mt-5">
+                        <div>Studenti online negli ultimi 30 minuti</div>
+                        <h3 id="student-jumbotron">125</h3>
+                    </div>
 
 
+                    <!-- Inserisco il terzo blocco del jumbotron -->
+                    <div class="col-lg-3 align-self-start mt-5">
+                        <div> Nuovo Studente
 
+                            <!-- Inserisco l'offcanvas di Bootstrap -->
 
+                            <!-- Parte inerente al bottone -->
+                            <button class="btn btn-primary" id="jumbotron-button" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+
+                            <!-- Parte di lettura -->
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <!-- Titolo dell'offcanvas -->
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Corpo dell'offcanvas -->
+                                <div class="offcanvas-body">
+                                    ...
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
         </main>
     </div>
 
