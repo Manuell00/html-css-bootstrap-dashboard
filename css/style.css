@@ -4,32 +4,90 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fredoka', sans-serif;
     font-size: 13px;
+
 }
 
-body {
-    height: 100vh;
+/* UNDER */
+/* Definisco under ovvero tutto ciò che è sottostante all'header */
+.under {
+    height: calc(100vh - 80px);
+    margin-top: 80px;
     display: flex;
     z-index: 0;
 }
 
+
 /* HEADER */
 /* Definisco lo stile dell'header */
 header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 80px;
     width: 100%;
-    background-color: #101010;
-    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
 }
+
+/* Definisco il logo a sinistra del footer */
+.header-logo{
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo img{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+/* Definisco lo stile della navbar */
+nav{
+    height: 100%;
+    width: calc((100% - 200px) - 10%);
+}
+
+#form-control-navbar {
+    background-color: lightgrey;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
+}
+
+
+/* Definisco le icone degli strumenti */
+.header-icons{
+    padding: 10px;
+    width: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-icons i{
+  font-size: 15px;
+}
+
+
+
 
 
 
 /* LEFT SIDE BAR */
 /* Definisco la left-side bar ovvero la barra sinistra della pagina */
 #left-side {
-    height: 100%;
-    margin-top: 80px;
+    max-height: 100%;
     width: 200px;
     color: white;
     background-color:rgb(21, 21, 33);
@@ -38,6 +96,8 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
+    left: 0;
 }
 
 
@@ -48,7 +108,5 @@ main {
     width: calc(100% - 200px);
     height: 100%;
     color: white;
-    margin-top: 80px;
     padding: 10px;
-    overflow-y: scroll;
 }
