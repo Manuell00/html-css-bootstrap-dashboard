@@ -1,0 +1,54 @@
+/* GENERALI */
+/* Regole generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 13px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    z-index: 0;
+}
+
+/* HEADER */
+/* Definisco lo stile dell'header */
+header {
+    height: 80px;
+    width: 100%;
+    background-color: #101010;
+    position: fixed;
+}
+
+
+
+/* LEFT SIDE BAR */
+/* Definisco la left-side bar ovvero la barra sinistra della pagina */
+#left-side {
+    height: 100%;
+    margin-top: 80px;
+    width: 200px;
+    color: white;
+    background-color:rgb(21, 21, 33);
+    background-image: url(../img/sidebar-bg.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+
+/* MAIN */
+/* Definisco lo stile del main */
+main {
+    width: calc(100% - 200px);
+    height: 100%;
+    color: white;
+    margin-top: 80px;
+    padding: 10px;
+    overflow-y: scroll;
+}
