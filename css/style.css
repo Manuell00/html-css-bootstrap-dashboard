@@ -16,21 +16,21 @@ ul{
 }
 
 .green-button{
-    padding: 1px 3px;
+    padding: 3px 5px;
     border-radius: 10px;
     background-color: green;
     color: white;
 }
 
 .yellow-button{
-    padding: 1px 3px;
+    padding: 3px 5px;
     border-radius: 10px;
-    background-color: yellow;
+    background-color: orange;
     color: white;
 }
 
 .red-button{
-    padding: 1px 3px;
+    padding: 3px 5px;
     border-radius: 10px;
     background-color: red;
     color: white;
@@ -162,7 +162,9 @@ nav{
     font-size: 15px;
 }
 
-
+.btn-outline-light {
+    --bs-btn-border-color:none;
+}
 
 
 /* MAIN */
@@ -171,6 +173,11 @@ main {
     width: calc(100% - 170px);
     height: 100%;
     color: white;
+    overflow-y: scroll;
+}
+
+.card{
+    margin: 10px;
 }
 
 /* JUMBOTRON */
@@ -226,7 +233,6 @@ main {
 }
 
 #left-main{
-    padding: 10px;
     background-color: aquamarine;
 }
 
@@ -245,7 +251,6 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
 }
 
 .image-container-list-group{

@@ -52,7 +52,8 @@
 
         <!-- Inserisco gli strumenti a destra dell'header -->
         <div class="btn-group" id="header-btn-group" role="group" aria-label="Button group with nested dropdown">
-            <button type="button" class="btn btn-primary" class="btn-personal"> <i class="fa-solid fa-bars"></i></button>
+            <button type="button" class="btn btn-primary" class="btn-personal"> <i
+                    class="fa-solid fa-bars"></i></button>
             <button type="button" class="btn btn-primary"><i class="fa-solid fa-question"></i></button>
             <button type="button" class="btn btn-primary"><i class="fa-solid fa-ellipsis-vertical"></i></button>
 
@@ -79,14 +80,22 @@
 
             <!-- Inserisco un container interno alla left-side -->
             <ul class="left-side-container">
-                <li><i class="fa-solid fa-house"></i><span class="left-side-text">Home</span></li>
-                <li><i class="fa-sharp fa-solid fa-chart-simple"></i><span class="left-side-text">Stats</span></li>
-                <li><i class="fa-solid fa-signal"></i><span class="left-side-text">Signal</span></li>
+                <li><button type="button" class="btn btn-outline-light"><i class="fa-solid fa-house"></i><span
+                            class="left-side-text">Home</span></button></li>
+
+                <li><button type="button" class="btn btn-outline-light"><i
+                            class="fa-sharp fa-solid fa-chart-simple"></i><span
+                            class="left-side-text">Stats</span></button></li>
+
+                <li><button type="button" class="btn btn-outline-light"><i class="fa-solid fa-signal"></i><span
+                            class="left-side-text">Signal</span></button></li>
             </ul>
 
             <!-- Inserimento del secondo container interno alla left-side -->
             <div class="left-side-container">
-                <div><i class="fa-solid fa-gear"></i><span class="left-side-text">Admin</span></div>
+                <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-gear"></i><span
+                        class="left-side-text">Admin</span></button>
+
             </div>
         </div>
 
@@ -294,29 +303,231 @@
                                 <!-- LIST GROUP -->
                                 <ul class="list-group list-group-flush">
 
-                                    <li class="list-group-item list-group-flex">
-                                        <div>Nome</div>
-                                        <div class="list-group-flex-2">
-                                            <span>Data inizio</span>
-                                            <span>ROI</span>
-                                            <span>Stato</span>
-                                            <span>Azioni</span>
+                                    <!-- Inserisco i titoli -->
+                                    <li class="list-group-item list-group-flex row ">
+                                        <!-- Primo gruppo -->
+                                        <div class="col-lg-2">Nome</div>
+
+                                        <!-- Secondo gruppo -->
+                                        <div class="list-group-flex-2 col-lg-6 text-center">
+                                            <span class="col-lg-3">Data inizio</span>
+                                            <span class="col-lg-2">ROI</span>
+                                            <span class="col-lg-3">Stato</span>
+                                            <span class="col-lg-4">Azioni</span>
                                         </div>
                                     </li>
 
-                                    <li class="list-group-item list-group-flex">
-                                        <div>
+                                    <!-- PRIMA RIGA -->
+                                    <li class="list-group-item list-group-flex row">
+                                        <!-- Primo gruppo -->
+                                        <div class="col-lg-3">
                                             <div class="image-container-list-group">
                                                 <img src="img/class-avatar.jpg" alt="Avatar">
                                             </div>
                                             <span>Classe 75</span>
                                         </div>
 
-                                        <div class="list-group-flex-2">
-                                            <span>15 Feb 2021</span>
-                                            <span>20%</span>
-                                            <span class="green-button">Done</span>
-                                            <span>Azioni</span>
+                                        <!-- Secondo gruppo -->
+                                        <div class="list-group-flex-2 col-lg-6 text-center">
+                                            <span class="col-lg-3">15 Feb 2021</span>
+                                            <span class="col-lg-2">20%</span>
+                                            <span class="col-lg-3"><span class="green-button">Done</span></span>
+
+                                            <!-- Inserimento dei due bottoni -->
+                                            <span class="col-lg-4">
+                                                <button type="button" class="btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-trash-can"></i></button>
+                                            </span>
+                                        </div>
+                                    </li>
+
+
+                                    <!-- SECONDA RIGA -->
+                                    <li class="list-group-item list-group-flex row">
+                                        <!-- Primo gruppo -->
+                                        <div class="col-lg-3">
+                                            <div class="image-container-list-group">
+                                                <img src="img/class-avatar.jpg" alt="Avatar">
+                                            </div>
+                                            <span>Classe 76</span>
+                                        </div>
+
+                                        <!-- Secondo gruppo -->
+                                        <div class="list-group-flex-2 col-lg-6 text-center">
+                                            <span class="col-lg-3">16 Feb 2021</span>
+                                            <span class="col-lg-2">20%</span>
+                                            <span class="col-lg-3"><span class="green-button">Done</span></span>
+
+                                            <!-- Inserimento dei due bottoni -->
+                                            <span class="col-lg-4">
+                                                <button type="button" class="btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-trash-can"></i></button>
+                                            </span>
+                                        </div>
+                                    </li>
+
+
+                                    <!-- TERZA RIGA -->
+                                    <li class="list-group-item list-group-flex row">
+                                        <!-- Primo gruppo -->
+                                        <div class="col-lg-3">
+                                            <div class="image-container-list-group">
+                                                <img src="img/class-avatar.jpg" alt="Avatar">
+                                            </div>
+                                            <span>Classe 77</span>
+                                        </div>
+
+                                        <!-- Secondo gruppo -->
+                                        <div class="list-group-flex-2 col-lg-6 text-center">
+                                            <span class="col-lg-3">17 Feb 2021</span>
+                                            <span class="col-lg-2">20%</span>
+                                            <span class="col-lg-3"><span class="yellow-button">Process</span></span>
+
+                                            <!-- Inserimento dei due bottoni -->
+                                            <span class="col-lg-4">
+                                                <button type="button" class="btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-trash-can"></i></button>
+                                            </span>
+                                        </div>
+                                    </li>
+
+
+                                    <!-- QUARTA RIGA -->
+                                    <li class="list-group-item list-group-flex row">
+                                        <!-- Primo gruppo -->
+                                        <div class="col-lg-3">
+                                            <div class="image-container-list-group">
+                                                <img src="img/class-avatar.jpg" alt="Avatar">
+                                            </div>
+                                            <span>Classe 78</span>
+                                        </div>
+
+                                        <!-- Secondo gruppo -->
+                                        <div class="list-group-flex-2 col-lg-6 text-center">
+                                            <span class="col-lg-3">18 Feb 2021</span>
+                                            <span class="col-lg-2">20%</span>
+                                            <span class="col-lg-3"><span class="green-button">Done</span></span>
+
+                                            <!-- Inserimento dei due bottoni -->
+                                            <span class="col-lg-4">
+                                                <button type="button" class="btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-trash-can"></i></button>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <!-- QUINTA RIGA -->
+                                    <li class="list-group-item list-group-flex row">
+                                        <!-- Primo gruppo -->
+                                        <div class="col-lg-3">
+                                            <div class="image-container-list-group">
+                                                <img src="img/class-avatar.jpg" alt="Avatar">
+                                            </div>
+                                            <span>Classe 79</span>
+                                        </div>
+
+                                        <!-- Secondo gruppo -->
+                                        <div class="list-group-flex-2 col-lg-6 text-center">
+                                            <span class="col-lg-3">19 Feb 2021</span>
+                                            <span class="col-lg-2">20%</span>
+                                            <span class="col-lg-3"><span class="red-button">Failed</span></span>
+
+                                            <!-- Inserimento dei due bottoni -->
+                                            <span class="col-lg-4">
+                                                <button type="button" class="btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-trash-can"></i></button>
+                                            </span>
+                                        </div>
+                                    </li>
+
+
+                                    <!-- SESTA RIGA -->
+                                    <li class="list-group-item list-group-flex row">
+                                        <!-- Primo gruppo -->
+                                        <div class="col-lg-3">
+                                            <div class="image-container-list-group">
+                                                <img src="img/class-avatar.jpg" alt="Avatar">
+                                            </div>
+                                            <span>Classe 80</span>
+                                        </div>
+
+                                        <!-- Secondo gruppo -->
+                                        <div class="list-group-flex-2 col-lg-6 text-center">
+                                            <span class="col-lg-3">20 Feb 2021</span>
+                                            <span class="col-lg-2">20%</span>
+                                            <span class="col-lg-3"><span class="green-button">Done</span></span>
+
+                                            <!-- Inserimento dei due bottoni -->
+                                            <span class="col-lg-4">
+                                                <button type="button" class="btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-trash-can"></i></button>
+                                            </span>
+                                        </div>
+                                    </li>
+
+
+                                    <!-- SETTIMA RIGA -->
+                                    <li class="list-group-item list-group-flex row">
+                                        <!-- Primo gruppo -->
+                                        <div class="col-lg-3">
+                                            <div class="image-container-list-group">
+                                                <img src="img/class-avatar.jpg" alt="Avatar">
+                                            </div>
+                                            <span>Classe 81</span>
+                                        </div>
+
+                                        <!-- Secondo gruppo -->
+                                        <div class="list-group-flex-2 col-lg-6 text-center">
+                                            <span class="col-lg-3">21 Feb 2021</span>
+                                            <span class="col-lg-2">20%</span>
+                                            <span class="col-lg-3"><span class="red-button">Failed</span></span>
+
+                                            <!-- Inserimento dei due bottoni -->
+                                            <span class="col-lg-4">
+                                                <button type="button" class="btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-trash-can"></i></button>
+                                            </span>
+                                        </div>
+                                    </li>
+
+
+                                    <!-- OTTAVA RIGA -->
+                                    <li class="list-group-item list-group-flex row">
+                                        <!-- Primo gruppo -->
+                                        <div class="col-lg-3">
+                                            <div class="image-container-list-group">
+                                                <img src="img/class-avatar.jpg" alt="Avatar">
+                                            </div>
+                                            <span>Classe 82</span>
+                                        </div>
+
+                                        <!-- Secondo gruppo -->
+                                        <div class="list-group-flex-2 col-lg-6 text-center">
+                                            <span class="col-lg-3">22 Feb 2021</span>
+                                            <span class="col-lg-2">20%</span>
+                                            <span class="col-lg-3"><span class="green-button">Done</span></span>
+
+                                            <!-- Inserimento dei due bottoni -->
+                                            <span class="col-lg-4">
+                                                <button type="button" class="btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary"><i
+                                                        class="fa-solid fa-trash-can"></i></button>
+                                            </span>
                                         </div>
                                     </li>
 
@@ -346,10 +557,7 @@
                                         </h2>
                                         <div id="flush-collapseOne" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is
-                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
-                                                the
-                                                first item's accordion body.</div>
+                                            <div class="accordion-body">Clicca sul + in alto nella sezione blu.</div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
@@ -362,12 +570,7 @@
                                         </h2>
                                         <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is
-                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
-                                                the
-                                                second item's accordion body. Let's imagine this being filled with some
-                                                actual
-                                                content.</div>
+                                            <div class="accordion-body">Clicca sull'icona della campanella.</div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
@@ -380,15 +583,8 @@
                                         </h2>
                                         <div id="flush-collapseThree" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is
-                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
-                                                the
-                                                third item's accordion body. Nothing more exciting happening here in
-                                                terms of
-                                                content, but just filling up the space to make it look, at least at
-                                                first
-                                                glance, a bit more representative of how this would look in a real-world
-                                                application.</div>
+                                            <div class="accordion-body">Si certamente, questa dashboard è adatta alle
+                                                versioni lg, md, sm e xs.</div>
                                         </div>
                                     </div>
                                 </div>
