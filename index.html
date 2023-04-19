@@ -32,42 +32,47 @@
 
     <!-- HEADER -->
     <header>
+        <div class="row justify-content-between align-content-center">
+            <!-- Inserisco il logo -->
+            <div class="header-logo col-lg-2 col-md-1">
+                <img src="img/logo.svg" id="desktop-logo" alt="Logo">
+                <img src="img/mobile-logo.png" id="mobile-logo" alt="Mobile Logo">
+            </div>
 
-        <!-- Inserisco il logo -->
-        <div class="header-logo">
-            <img src="img/logo.svg" alt="Logo">
-        </div>
+            
 
-        <!-- NAVBAR -->
-        <!-- Inserisco una navbar presa da Bootstrap -->
-        <nav class="navbar bg-body-tertiary">
-            <form class="container-fluid">
-                <div class="input-group">
-                    <input type="text" class="form-control" id="form-control-navbar"
-                        placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username"
-                        aria-describedby="basic-addon1">
+            <!-- NAVBAR -->
+            <!-- Inserisco una navbar presa da Bootstrap -->
+            <nav class="navbar bg-body-tertiary col-xl-8 col-lg-6 col-md-10">
+                <form class="container-fluid">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="form-control-navbar"
+                            placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                </form>
+            </nav>
+
+            <!-- Inserisco gli strumenti a destra dell'header -->
+            <div class="btn-group col-lg-2 col-md-1" id="header-btn-group" role="group"
+                aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-primary header-btn-group-none" class="btn-personal"> <i
+                        class="fa-solid fa-bars"></i></button>
+                <button type="button" class="btn btn-primary header-btn-group-none"><i class="fa-solid fa-question"></i></button>
+                <button type="button" class="btn btn-primary header-btn-group-none"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+
+
+                <div class="btn-group" role="group" id="bell-btn-button">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-bell"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
                 </div>
-            </form>
-        </nav>
-
-        <!-- Inserisco gli strumenti a destra dell'header -->
-        <div class="btn-group" id="header-btn-group" role="group" aria-label="Button group with nested dropdown">
-            <button type="button" class="btn btn-primary" class="btn-personal"> <i
-                    class="fa-solid fa-bars"></i></button>
-            <button type="button" class="btn btn-primary"><i class="fa-solid fa-question"></i></button>
-            <button type="button" class="btn btn-primary"><i class="fa-solid fa-ellipsis-vertical"></i></button>
-
-
-            <div class="btn-group" role="group">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <i class="fa-solid fa-bell"></i>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Profilo</a></li>
-                    <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                    <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
             </div>
         </div>
     </header>
@@ -109,28 +114,29 @@
                 <div class="row align-items-center justify-content-between">
 
                     <!-- Inserisco il primo blocco del jumbotron -->
-                    <div class="col-lg-5">
+                    <div class="col-md-4 col-lg-7">
                         <h3>Boolean</h3>
                         <span class="circle-text-jumbotron">Piano blaze</span>
 
                         <div>
                             <span class="circle-text-jumbotron">3 app</span>
                             <span><i class="fa-solid fa-angles-right"></i></span>
-                            <span class="circle-text-jumbotron">Boolean mobile app</span>
-                            <span class="circle-text-jumbotron">Boolean web app</span>
-                            <span class="circle-text-jumbotron">Boolean blog app</span>
+                            <span class="circle-text-jumbotron-lg">Boolean mobile app</span>
+                            <span class="circle-text-jumbotron-lg">Boolean web app</span>
+                            <span class="circle-text-jumbotron-lg">Boolean blog app</span>
+                            <span class="circle-text-jumbotron" id="circle-text-jumbotron-plus">+</span>
                         </div>
                     </div>
 
                     <!-- Inserisco il secondo blocco del jumbotron -->
-                    <div class="col-lg-3 align-self-start mt-5">
+                    <div class="col-md-4 col-lg-3 align-self-start mt-5">
                         <div>Studenti online negli ultimi 30 minuti</div>
                         <h3 id="student-jumbotron">125</h3>
                     </div>
 
 
                     <!-- Inserisco il terzo blocco del jumbotron -->
-                    <div class="col-lg-2 align-self-start mt-5">
+                    <div class="col-md-2 col-lg-2 align-self-start mt-5">
                         <div> Nuovo Studente
 
 
@@ -292,7 +298,7 @@
                     <!-- Divido la riga in due sezioni -->
 
                     <!-- PRIMA SEZIONE (8 colonne) -->
-                    <div class="col-lg-8" id="left-main">
+                    <div class="col-md-12 col-lg-8" id="left-main">
 
                         <!-- CARD DELLA LIST GROUP -->
                         <div class="card">
@@ -306,21 +312,21 @@
                                     <!-- Inserisco i titoli -->
                                     <li class="list-group-item list-group-flex row ">
                                         <!-- Primo gruppo -->
-                                        <div class="col-lg-2">Nome</div>
+                                        <div class="col-md-2 col-lg-2">Nome</div>
 
                                         <!-- Secondo gruppo -->
-                                        <div class="list-group-flex-2 col-lg-6 text-center">
-                                            <span class="col-lg-3">Data inizio</span>
-                                            <span class="col-lg-2">ROI</span>
-                                            <span class="col-lg-3">Stato</span>
-                                            <span class="col-lg-4">Azioni</span>
+                                        <div class="list-group-flex-2 col-md-6 col-lg-6 text-center">
+                                            <span class="col-md-3 col-lg-3">Data inizio</span>
+                                            <span class="col-md-2 col-lg-2">ROI</span>
+                                            <span class="col-md-3 col-lg-3">Stato</span>
+                                            <span class="col-md-4 col-lg-4">Azioni</span>
                                         </div>
                                     </li>
 
                                     <!-- PRIMA RIGA -->
                                     <li class="list-group-item list-group-flex row">
                                         <!-- Primo gruppo -->
-                                        <div class="col-lg-3">
+                                        <div class="col-md-3 col-lg-3">
                                             <div class="image-container-list-group">
                                                 <img src="img/class-avatar.jpg" alt="Avatar">
                                             </div>
@@ -328,13 +334,13 @@
                                         </div>
 
                                         <!-- Secondo gruppo -->
-                                        <div class="list-group-flex-2 col-lg-6 text-center">
-                                            <span class="col-lg-3">15 Feb 2021</span>
-                                            <span class="col-lg-2">20%</span>
-                                            <span class="col-lg-3"><span class="green-button">Done</span></span>
+                                        <div class="list-group-flex-2  col-md-6 col-lg-6 text-center">
+                                            <span class="col-md-3">15 Feb 2021</span>
+                                            <span class="col-md-2">20%</span>
+                                            <span class="col-md-3"><span class="green-button">Done</span></span>
 
                                             <!-- Inserimento dei due bottoni -->
-                                            <span class="col-lg-4">
+                                            <span class="col-md-4">
                                                 <button type="button" class="btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i
@@ -347,7 +353,7 @@
                                     <!-- SECONDA RIGA -->
                                     <li class="list-group-item list-group-flex row">
                                         <!-- Primo gruppo -->
-                                        <div class="col-lg-3">
+                                        <div class="col-md-3">
                                             <div class="image-container-list-group">
                                                 <img src="img/class-avatar.jpg" alt="Avatar">
                                             </div>
@@ -355,13 +361,13 @@
                                         </div>
 
                                         <!-- Secondo gruppo -->
-                                        <div class="list-group-flex-2 col-lg-6 text-center">
-                                            <span class="col-lg-3">16 Feb 2021</span>
-                                            <span class="col-lg-2">20%</span>
-                                            <span class="col-lg-3"><span class="green-button">Done</span></span>
+                                        <div class="list-group-flex-2 col-md-6 text-center">
+                                            <span class="col-md-3">16 Feb 2021</span>
+                                            <span class="col-md-2">20%</span>
+                                            <span class="col-md-3"><span class="green-button">Done</span></span>
 
                                             <!-- Inserimento dei due bottoni -->
-                                            <span class="col-lg-4">
+                                            <span class="col-md-4">
                                                 <button type="button" class="btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i
@@ -374,7 +380,7 @@
                                     <!-- TERZA RIGA -->
                                     <li class="list-group-item list-group-flex row">
                                         <!-- Primo gruppo -->
-                                        <div class="col-lg-3">
+                                        <div class="col-md-3">
                                             <div class="image-container-list-group">
                                                 <img src="img/class-avatar.jpg" alt="Avatar">
                                             </div>
@@ -382,13 +388,13 @@
                                         </div>
 
                                         <!-- Secondo gruppo -->
-                                        <div class="list-group-flex-2 col-lg-6 text-center">
-                                            <span class="col-lg-3">17 Feb 2021</span>
-                                            <span class="col-lg-2">20%</span>
-                                            <span class="col-lg-3"><span class="yellow-button">Process</span></span>
+                                        <div class="list-group-flex-2 col-md-6 text-center">
+                                            <span class="col-md-3">17 Feb 2021</span>
+                                            <span class="col-md-2">20%</span>
+                                            <span class="col-md-3"><span class="yellow-button">Process</span></span>
 
                                             <!-- Inserimento dei due bottoni -->
-                                            <span class="col-lg-4">
+                                            <span class="col-md-4">
                                                 <button type="button" class="btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i
@@ -401,7 +407,7 @@
                                     <!-- QUARTA RIGA -->
                                     <li class="list-group-item list-group-flex row">
                                         <!-- Primo gruppo -->
-                                        <div class="col-lg-3">
+                                        <div class="col-md-3">
                                             <div class="image-container-list-group">
                                                 <img src="img/class-avatar.jpg" alt="Avatar">
                                             </div>
@@ -409,13 +415,13 @@
                                         </div>
 
                                         <!-- Secondo gruppo -->
-                                        <div class="list-group-flex-2 col-lg-6 text-center">
-                                            <span class="col-lg-3">18 Feb 2021</span>
-                                            <span class="col-lg-2">20%</span>
-                                            <span class="col-lg-3"><span class="green-button">Done</span></span>
+                                        <div class="list-group-flex-2 col-md-6 text-center">
+                                            <span class="col-md-3">18 Feb 2021</span>
+                                            <span class="col-md-2">20%</span>
+                                            <span class="col-md-3"><span class="green-button">Done</span></span>
 
                                             <!-- Inserimento dei due bottoni -->
-                                            <span class="col-lg-4">
+                                            <span class="col-md-4">
                                                 <button type="button" class="btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i
@@ -427,7 +433,7 @@
                                     <!-- QUINTA RIGA -->
                                     <li class="list-group-item list-group-flex row">
                                         <!-- Primo gruppo -->
-                                        <div class="col-lg-3">
+                                        <div class="col-md-3">
                                             <div class="image-container-list-group">
                                                 <img src="img/class-avatar.jpg" alt="Avatar">
                                             </div>
@@ -435,13 +441,13 @@
                                         </div>
 
                                         <!-- Secondo gruppo -->
-                                        <div class="list-group-flex-2 col-lg-6 text-center">
-                                            <span class="col-lg-3">19 Feb 2021</span>
-                                            <span class="col-lg-2">20%</span>
-                                            <span class="col-lg-3"><span class="red-button">Failed</span></span>
+                                        <div class="list-group-flex-2 col-md-6 text-center">
+                                            <span class="col-md-3">19 Feb 2021</span>
+                                            <span class="col-md-2">20%</span>
+                                            <span class="col-md-3"><span class="red-button">Failed</span></span>
 
                                             <!-- Inserimento dei due bottoni -->
-                                            <span class="col-lg-4">
+                                            <span class="col-md-4">
                                                 <button type="button" class="btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i
@@ -454,7 +460,7 @@
                                     <!-- SESTA RIGA -->
                                     <li class="list-group-item list-group-flex row">
                                         <!-- Primo gruppo -->
-                                        <div class="col-lg-3">
+                                        <div class="col-md-3">
                                             <div class="image-container-list-group">
                                                 <img src="img/class-avatar.jpg" alt="Avatar">
                                             </div>
@@ -462,13 +468,13 @@
                                         </div>
 
                                         <!-- Secondo gruppo -->
-                                        <div class="list-group-flex-2 col-lg-6 text-center">
-                                            <span class="col-lg-3">20 Feb 2021</span>
-                                            <span class="col-lg-2">20%</span>
-                                            <span class="col-lg-3"><span class="green-button">Done</span></span>
+                                        <div class="list-group-flex-2 col-md-6 text-center">
+                                            <span class="col-md-3">20 Feb 2021</span>
+                                            <span class="col-md-2">20%</span>
+                                            <span class="col-md-3"><span class="green-button">Done</span></span>
 
                                             <!-- Inserimento dei due bottoni -->
-                                            <span class="col-lg-4">
+                                            <span class="col-md-4">
                                                 <button type="button" class="btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i
@@ -481,7 +487,7 @@
                                     <!-- SETTIMA RIGA -->
                                     <li class="list-group-item list-group-flex row">
                                         <!-- Primo gruppo -->
-                                        <div class="col-lg-3">
+                                        <div class="col-md-3">
                                             <div class="image-container-list-group">
                                                 <img src="img/class-avatar.jpg" alt="Avatar">
                                             </div>
@@ -489,13 +495,13 @@
                                         </div>
 
                                         <!-- Secondo gruppo -->
-                                        <div class="list-group-flex-2 col-lg-6 text-center">
-                                            <span class="col-lg-3">21 Feb 2021</span>
-                                            <span class="col-lg-2">20%</span>
-                                            <span class="col-lg-3"><span class="red-button">Failed</span></span>
+                                        <div class="list-group-flex-2 col-md-6 text-center">
+                                            <span class="col-md-3">21 Feb 2021</span>
+                                            <span class="col-md-2">20%</span>
+                                            <span class="col-md-3"><span class="red-button">Failed</span></span>
 
                                             <!-- Inserimento dei due bottoni -->
-                                            <span class="col-lg-4">
+                                            <span class="col-md-4">
                                                 <button type="button" class="btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i
@@ -508,7 +514,7 @@
                                     <!-- OTTAVA RIGA -->
                                     <li class="list-group-item list-group-flex row">
                                         <!-- Primo gruppo -->
-                                        <div class="col-lg-3">
+                                        <div class="col-md-3">
                                             <div class="image-container-list-group">
                                                 <img src="img/class-avatar.jpg" alt="Avatar">
                                             </div>
@@ -516,13 +522,13 @@
                                         </div>
 
                                         <!-- Secondo gruppo -->
-                                        <div class="list-group-flex-2 col-lg-6 text-center">
-                                            <span class="col-lg-3">22 Feb 2021</span>
-                                            <span class="col-lg-2">20%</span>
-                                            <span class="col-lg-3"><span class="green-button">Done</span></span>
+                                        <div class="list-group-flex-2 col-md-6 text-center">
+                                            <span class="col-md-3">22 Feb 2021</span>
+                                            <span class="col-md-2">20%</span>
+                                            <span class="col-md-3"><span class="green-button">Done</span></span>
 
                                             <!-- Inserimento dei due bottoni -->
-                                            <span class="col-lg-4">
+                                            <span class="col-md-4">
                                                 <button type="button" class="btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i
@@ -598,95 +604,76 @@
 
 
                     <!-- SECONDA SEZIONE(4 colonne) -->
-                    <div class="col-lg-4" id="right-main">
+                    <div class="col-md-12 col-lg-4" id="right-main">
 
                         <!-- CHECK CARD -->
                         <div class="card">
                             <h3 class="card-header">Todo</h3>
                             <div class="card-body">
                                 <ul class="list-group">
-                                <!-- Inserisco il primo check -->
+                                    <!-- Inserisco il primo check -->
                                     <li class="list-group-item">
                                         <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                          Kickoff nuove classi
-                                        </label>
-                                      </div>
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Kickoff nuove classi
+                                            </label>
+                                        </div>
                                     </li>
-                                <!-- Inserisco il secondo check -->
+                                    <!-- Inserisco il secondo check -->
                                     <li class="list-group-item">
                                         <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                          Lezione su Bootstrap 5 in classe #75
-                                        </label>
-                                      </div>
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Lezione su Bootstrap 5 in classe #75
+                                            </label>
+                                        </div>
                                     </li>
-                                <!-- Inserisco il terzo check -->
+                                    <!-- Inserisco il terzo check -->
                                     <li class="list-group-item">
                                         <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                          Controllare usarname github studenti
-                                        </label>
-                                      </div>
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Controllare usarname github studenti
+                                            </label>
+                                        </div>
                                     </li>
-                                  </ul>
+                                </ul>
                             </div>
                         </div>
 
 
-                            <!-- GRAPH IMAGE -->
-                            <div class="card mb-3" id="graph">
-                                <img src="img/stats.jpeg" class="card-img-top" alt="Graph">
-                                <div class="card-body">
-                                  <h4 class="card-title">Utenti attivi</h4>
-                                  <p class="card-text">Lista degli utenti attivi in piattafroma nell'ultimo mese</p>
-                                </div>
+                        <!-- GRAPH IMAGE -->
+                        <div class="card mb-3" id="graph">
+                            <img src="img/stats.jpeg" class="card-img-top" alt="Graph">
+                            <div class="card-body">
+                                <h4 class="card-title">Utenti attivi</h4>
+                                <p class="card-text">Lista degli utenti attivi in piattafroma nell'ultimo mese</p>
+                            </div>
 
-                                <div class="card-body" id="card-body-2">
-                                  <ul class="list-group">
+                            <div class="card-body" id="card-body-2">
+                                <ul class="list-group">
                                     <li class="list-group-item">Gennaio : 1200</li>
                                     <li class="list-group-item">Febbario : 800</li>
                                     <li class="list-group-item">Marzo : 1500</li>
-                                    <li class="list-group-item" id="report-link"><a href="#">Visualizza report approfondito</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                        
-
-
-
-
-
-
+                                    <li class="list-group-item" id="report-link"><a href="#">Visualizza report
+                                            approfondito</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-
-
             </div>
-
-
-
-
-
-
+            <!-- Chiusura parte interna del main -->
 
         </main>
+        <!-- Chiusura del main -->
+
     </div>
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Chiusura dell'under -->
 
 
     <!-- Inserisco lo script per il Javascript di Bootstrap -->
