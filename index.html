@@ -50,13 +50,24 @@
             </form>
         </nav>
 
-        <!-- Inserisco gòi strumenti a destra dell'header -->
-        <div class="header-icons">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-question"></i>
-            <i class="fa-solid fa-ellipsis-vertical"></i>
-            <i class="fa-solid fa-bell"></i>
+        <!-- Inserisco gli strumenti a destra dell'header -->
+        <div class="btn-group" id="header-btn-group" role="group" aria-label="Button group with nested dropdown">
+            <button type="button" class="btn btn-primary" class="btn-personal"> <i class="fa-solid fa-bars"></i></button>
+            <button type="button" class="btn btn-primary"><i class="fa-solid fa-question"></i></button>
+            <button type="button" class="btn btn-primary"><i class="fa-solid fa-ellipsis-vertical"></i></button>
 
+
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-bell"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                    <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -239,7 +250,7 @@
                                                 <label for="foto" class="form-label">Foto</label>
                                                 <div class="input-group mb-3">
                                                     <input type="file" class="form-control" id="inputGroupFile01">
-                                                  </div>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -247,7 +258,8 @@
                                         <div class="mb-3 form-check">
                                             <!-- Checkbox per proseguire -->
                                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                            <label class="form-check-label" for="exampleCheck1">Selezione per proseguire</label>
+                                            <label class="form-check-label" for="exampleCheck1">Selezione per
+                                                proseguire</label>
                                         </div>
 
                                         <!-- Tasti per svuotare o inviare -->
@@ -261,6 +273,156 @@
                 </div>
             </div>
             <!-- Fine del jumbotron -->
+
+
+            <!-- PARTE INTERNA MAIN -->
+            <!-- Inizio della parte interna del main -->
+            <div class="container-fluid" id="principal-main">
+                <!-- Definisco una riga che prenda tutto lo spazio occupato dal container -->
+                <div class="row">
+                    <!-- Divido la riga in due sezioni -->
+
+                    <!-- PRIMA SEZIONE (8 colonne) -->
+                    <div class="col-lg-8" id="left-main">
+
+                        <!-- CARD DELLA LIST GROUP -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Prossime classi</h3>
+                            </div>
+                            <div class="card-body">
+                                <!-- LIST GROUP -->
+                                <ul class="list-group list-group-flush">
+
+                                    <li class="list-group-item list-group-flex">
+                                        <div>Nome</div>
+                                        <div class="list-group-flex-2">
+                                            <span>Data inizio</span>
+                                            <span>ROI</span>
+                                            <span>Stato</span>
+                                            <span>Azioni</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item list-group-flex">
+                                        <div>
+                                            <div class="image-container-list-group">
+                                                <img src="img/class-avatar.jpg" alt="Avatar">
+                                            </div>
+                                            <span>Classe 75</span>
+                                        </div>
+
+                                        <div class="list-group-flex-2">
+                                            <span>15 Feb 2021</span>
+                                            <span>20%</span>
+                                            <span class="green-button">Done</span>
+                                            <span>Azioni</span>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- CARD DELLA FAQ -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>F.A.Q</h3>
+                            </div>
+                            <div class="card-body">
+
+                                <!-- FAQ -->
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                Come aggiungere un nuovo studente?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
+                                                the
+                                                first item's accordion body.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                Come posso accedere alle informazioni del mio account
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
+                                                the
+                                                second item's accordion body. Let's imagine this being filled with some
+                                                actual
+                                                content.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                                Posso usare questa dashboard da mobile?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
+                                                the
+                                                third item's accordion body. Nothing more exciting happening here in
+                                                terms of
+                                                content, but just filling up the space to make it look, at least at
+                                                first
+                                                glance, a bit more representative of how this would look in a real-world
+                                                application.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Chiudo la carta della FAQ -->
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- SECONDA SEZIONE(4 colonne) -->
+                    <div class="col-lg-4" id="right-main">
+
+                    </div>
+
+                </div>
+
+
+            </div>
 
 
 
