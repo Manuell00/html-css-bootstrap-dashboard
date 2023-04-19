@@ -224,7 +224,6 @@ main {
 
 /* PRINCIPAL MAIN */
 #principal-main{
-    background-color: lightblue;
     height: calc(100% - 150px);
 }
 
@@ -233,14 +232,14 @@ main {
 }
 
 #left-main{
-    background-color: aquamarine;
+    background-color: #eeeeee;
 }
 
 #right-main{
-    background-color:blueviolet;
+    background-color: #eeeeee;
 }
 
-/* LIST GROUP */
+/* LIST GROUP LEFT MAIN */
 .list-group-flex{
     display: flex;
     justify-content: space-between;
@@ -264,4 +263,9 @@ main {
     max-height: 100%;
     max-width: 100%;
     object-fit: cover;
+}
+
+/* LIST GROUP RIGHT MAIN */
+#card-body-2{
+    padding: 0;
 }
