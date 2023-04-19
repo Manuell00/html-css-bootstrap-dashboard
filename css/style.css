@@ -269,3 +269,8 @@ main {
 #card-body-2{
     padding: 0;
 }
+
+#report-link{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
