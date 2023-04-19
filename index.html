@@ -34,7 +34,7 @@
     <header>
         <div class="row justify-content-between align-content-center">
             <!-- Inserisco il logo -->
-            <div class="header-logo col-lg-2 col-md-1">
+            <div class="header-logo  col-sm-2 col-md-1 col-lg-2">
                 <img src="img/logo.svg" id="desktop-logo" alt="Logo">
                 <img src="img/mobile-logo.png" id="mobile-logo" alt="Mobile Logo">
             </div>
@@ -43,7 +43,7 @@
 
             <!-- NAVBAR -->
             <!-- Inserisco una navbar presa da Bootstrap -->
-            <nav class="navbar bg-body-tertiary col-xl-8 col-lg-6 col-md-10">
+            <nav class="navbar bg-body-tertiary  col-sm-9 col-md-10 col-lg-8">
                 <form class="container-fluid">
                     <div class="input-group">
                         <input type="text" class="form-control" id="form-control-navbar"
@@ -54,7 +54,7 @@
             </nav>
 
             <!-- Inserisco gli strumenti a destra dell'header -->
-            <div class="btn-group col-lg-2 col-md-1" id="header-btn-group" role="group"
+            <div class="btn-group col-lg-2 col-sm-1" id="header-btn-group" role="group"
                 aria-label="Button group with nested dropdown">
                 <button type="button" class="btn btn-primary header-btn-group-none" class="btn-personal"> <i
                         class="fa-solid fa-bars"></i></button>
@@ -114,7 +114,7 @@
                 <div class="row align-items-center justify-content-between">
 
                     <!-- Inserisco il primo blocco del jumbotron -->
-                    <div class="col-md-4 col-lg-7">
+                    <div class="col-sm-12 col-md-4 col-lg-7" id="boolean-title-jumbotron">
                         <h3>Boolean</h3>
                         <span class="circle-text-jumbotron">Piano blaze</span>
 
@@ -129,15 +129,15 @@
                     </div>
 
                     <!-- Inserisco il secondo blocco del jumbotron -->
-                    <div class="col-md-4 col-lg-3 align-self-start mt-5">
-                        <div>Studenti online negli ultimi 30 minuti</div>
+                    <div class="col-sm-12 col-md-4 col-lg-3 align-self-start mt-5" id="boolean-number-students-jumbotron">
+                        <div class="jumbo-text">Studenti online negli ultimi 30 minuti</div>
                         <h3 id="student-jumbotron">125</h3>
                     </div>
 
 
                     <!-- Inserisco il terzo blocco del jumbotron -->
-                    <div class="col-md-2 col-lg-2 align-self-start mt-5">
-                        <div> Nuovo Studente
+                    <div class="col-sm-12 col-md-2 col-lg-2 align-self-start mt-5">
+                        <div class="jumbo-text"> Nuovo Studente
 
 
                             <!-- OFFCANVAS -->
@@ -312,21 +312,21 @@
                                     <!-- Inserisco i titoli -->
                                     <li class="list-group-item list-group-flex row ">
                                         <!-- Primo gruppo -->
-                                        <div class="col-md-2 col-lg-2">Nome</div>
+                                        <div class="col-sm-4 col-md-2 col-lg-2">Nome</div>
 
                                         <!-- Secondo gruppo -->
-                                        <div class="list-group-flex-2 col-md-6 col-lg-6 text-center">
-                                            <span class="col-md-3 col-lg-3">Data inizio</span>
-                                            <span class="col-md-2 col-lg-2">ROI</span>
-                                            <span class="col-md-3 col-lg-3">Stato</span>
-                                            <span class="col-md-4 col-lg-4">Azioni</span>
+                                        <div class="list-group-flex-2 col-sm-8 col-md-6 col-lg-6 text-center">
+                                            <span class="col-md-3 col-lg-3 principal-main-smartphone-none">Data inizio</span>
+                                            <span class="col-md-2 col-lg-2 principal-main-smartphone-none">ROI</span>
+                                            <span class="col-sm-6 col-md-3 col-lg-3">Stato</span>
+                                            <span class="col-sm-6 col-md-4 col-lg-4">Azioni</span>
                                         </div>
                                     </li>
 
                                     <!-- PRIMA RIGA -->
                                     <li class="list-group-item list-group-flex row">
                                         <!-- Primo gruppo -->
-                                        <div class="col-md-3 col-lg-3">
+                                        <div class="col-sm-4 col-md-3 col-lg-3">
                                             <div class="image-container-list-group">
                                                 <img src="img/class-avatar.jpg" alt="Avatar">
                                             </div>
@@ -334,13 +334,13 @@
                                         </div>
 
                                         <!-- Secondo gruppo -->
-                                        <div class="list-group-flex-2  col-md-6 col-lg-6 text-center">
-                                            <span class="col-md-3">15 Feb 2021</span>
-                                            <span class="col-md-2">20%</span>
-                                            <span class="col-md-3"><span class="green-button">Done</span></span>
+                                        <div class="list-group-flex-2  col-sm-8 col-md-6 col-lg-6 text-center">
+                                            <span class="col-md-3 principal-main-smartphone-none">15 Feb 2021</span>
+                                            <span class="col-md-2 principal-main-smartphone-none">20%</span>
+                                            <span class="col-sm-6 col-md-3"><span class="green-button">Done</span></span>
 
                                             <!-- Inserimento dei due bottoni -->
-                                            <span class="col-md-4">
+                                            <span class="col-sm-6 col-md-4">
                                                 <button type="button" class="btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i
@@ -353,7 +353,7 @@
                                     <!-- SECONDA RIGA -->
                                     <li class="list-group-item list-group-flex row">
                                         <!-- Primo gruppo -->
-                                        <div class="col-md-3">
+                                        <div class="col-sm-4 col-md-3">
                                             <div class="image-container-list-group">
                                                 <img src="img/class-avatar.jpg" alt="Avatar">
                                             </div>
@@ -361,13 +361,13 @@
                                         </div>
 
                                         <!-- Secondo gruppo -->
-                                        <div class="list-group-flex-2 col-md-6 text-center">
-                                            <span class="col-md-3">16 Feb 2021</span>
-                                            <span class="col-md-2">20%</span>
-                                            <span class="col-md-3"><span class="green-button">Done</span></span>
+                                        <div class="list-group-flex-2 col-sm-8 col-md-6 text-center">
+                                            <span class="col-md-3 principal-main-smartphone-none">16 Feb 2021</span>
+                                            <span class="col-md-2 principal-main-smartphone-none">20%</span>
+                                            <span class="col-sm-6 col-md-3"><span class="green-button">Done</span></span>
 
                                             <!-- Inserimento dei due bottoni -->
-                                            <span class="col-md-4">
+                                            <span class="col-sm-6 col-md-4">
                                                 <button type="button" class="btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i
@@ -380,7 +380,7 @@
                                     <!-- TERZA RIGA -->
                                     <li class="list-group-item list-group-flex row">
                                         <!-- Primo gruppo -->
-                                        <div class="col-md-3">
+                                        <div class="col-sm-4 col-md-3">
                                             <div class="image-container-list-group">
                                                 <img src="img/class-avatar.jpg" alt="Avatar">
                                             </div>
@@ -388,13 +388,13 @@
                                         </div>
 
                                         <!-- Secondo gruppo -->
-                                        <div class="list-group-flex-2 col-md-6 text-center">
-                                            <span class="col-md-3">17 Feb 2021</span>
-                                            <span class="col-md-2">20%</span>
-                                            <span class="col-md-3"><span class="yellow-button">Process</span></span>
+                                        <div class="list-group-flex-2 col-sm-8 col-md-6 text-center">
+                                            <span class="col-md-3 principal-main-smartphone-none">17 Feb 2021</span>
+                                            <span class="col-md-2 principal-main-smartphone-none">20%</span>
+                                            <span class="col-sm-6 col-md-3"><span class="yellow-button">Process</span></span>
 
                                             <!-- Inserimento dei due bottoni -->
-                                            <span class="col-md-4">
+                                            <span class="col-sm-6 col-md-4">
                                                 <button type="button" class="btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i
@@ -407,7 +407,7 @@
                                     <!-- QUARTA RIGA -->
                                     <li class="list-group-item list-group-flex row">
                                         <!-- Primo gruppo -->
-                                        <div class="col-md-3">
+                                        <div class="col-sm-4 col-md-3">
                                             <div class="image-container-list-group">
                                                 <img src="img/class-avatar.jpg" alt="Avatar">
                                             </div>
@@ -415,13 +415,13 @@
                                         </div>
 
                                         <!-- Secondo gruppo -->
-                                        <div class="list-group-flex-2 col-md-6 text-center">
-                                            <span class="col-md-3">18 Feb 2021</span>
-                                            <span class="col-md-2">20%</span>
-                                            <span class="col-md-3"><span class="green-button">Done</span></span>
+                                        <div class="list-group-flex-2 col-sm-8 col-md-6 text-center">
+                                            <span class="col-md-3 principal-main-smartphone-none">18 Feb 2021</span>
+                                            <span class="col-md-2 principal-main-smartphone-none">20%</span>
+                                            <span class="col-sm-6 col-md-3"><span class="green-button">Done</span></span>
 
                                             <!-- Inserimento dei due bottoni -->
-                                            <span class="col-md-4">
+                                            <span class="col-sm-6 col-md-4">
                                                 <button type="button" class="btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i
@@ -433,7 +433,7 @@
                                     <!-- QUINTA RIGA -->
                                     <li class="list-group-item list-group-flex row">
                                         <!-- Primo gruppo -->
-                                        <div class="col-md-3">
+                                        <div class="col-sm-4 col-md-3">
                                             <div class="image-container-list-group">
                                                 <img src="img/class-avatar.jpg" alt="Avatar">
                                             </div>
@@ -441,13 +441,13 @@
                                         </div>
 
                                         <!-- Secondo gruppo -->
-                                        <div class="list-group-flex-2 col-md-6 text-center">
-                                            <span class="col-md-3">19 Feb 2021</span>
-                                            <span class="col-md-2">20%</span>
-                                            <span class="col-md-3"><span class="red-button">Failed</span></span>
+                                        <div class="list-group-flex-2 col-sm-8 col-md-6 text-center">
+                                            <span class="col-md-3 principal-main-smartphone-none">19 Feb 2021</span>
+                                            <span class="col-md-2 principal-main-smartphone-none">20%</span>
+                                            <span class="col-sm-6 col-md-3"><span class="red-button">Failed</span></span>
 
                                             <!-- Inserimento dei due bottoni -->
-                                            <span class="col-md-4">
+                                            <span class="col-sm-6 col-md-4">
                                                 <button type="button" class="btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i
@@ -460,7 +460,7 @@
                                     <!-- SESTA RIGA -->
                                     <li class="list-group-item list-group-flex row">
                                         <!-- Primo gruppo -->
-                                        <div class="col-md-3">
+                                        <div class="col-sm-4 col-md-3">
                                             <div class="image-container-list-group">
                                                 <img src="img/class-avatar.jpg" alt="Avatar">
                                             </div>
@@ -468,13 +468,13 @@
                                         </div>
 
                                         <!-- Secondo gruppo -->
-                                        <div class="list-group-flex-2 col-md-6 text-center">
-                                            <span class="col-md-3">20 Feb 2021</span>
-                                            <span class="col-md-2">20%</span>
-                                            <span class="col-md-3"><span class="green-button">Done</span></span>
+                                        <div class="list-group-flex-2 col-sm-8 col-md-6 text-center">
+                                            <span class="col-md-3 principal-main-smartphone-none">20 Feb 2021</span>
+                                            <span class="col-md-2 principal-main-smartphone-none">20%</span>
+                                            <span class="col-sm-6 col-md-3"><span class="green-button">Done</span></span>
 
                                             <!-- Inserimento dei due bottoni -->
-                                            <span class="col-md-4">
+                                            <span class="col-sm-6 col-md-4">
                                                 <button type="button" class="btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i
@@ -487,7 +487,7 @@
                                     <!-- SETTIMA RIGA -->
                                     <li class="list-group-item list-group-flex row">
                                         <!-- Primo gruppo -->
-                                        <div class="col-md-3">
+                                        <div class="col-sm-4 col-md-3">
                                             <div class="image-container-list-group">
                                                 <img src="img/class-avatar.jpg" alt="Avatar">
                                             </div>
@@ -495,13 +495,13 @@
                                         </div>
 
                                         <!-- Secondo gruppo -->
-                                        <div class="list-group-flex-2 col-md-6 text-center">
-                                            <span class="col-md-3">21 Feb 2021</span>
-                                            <span class="col-md-2">20%</span>
-                                            <span class="col-md-3"><span class="red-button">Failed</span></span>
+                                        <div class="list-group-flex-2 col-sm-8 col-md-6 text-center">
+                                            <span class="col-md-3 principal-main-smartphone-none">21 Feb 2021</span>
+                                            <span class="col-md-2 principal-main-smartphone-none">20%</span>
+                                            <span class="col-sm-6 col-md-3"><span class="red-button">Failed</span></span>
 
                                             <!-- Inserimento dei due bottoni -->
-                                            <span class="col-md-4">
+                                            <span class="col-sm-6 col-md-4">
                                                 <button type="button" class="btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i
@@ -514,7 +514,7 @@
                                     <!-- OTTAVA RIGA -->
                                     <li class="list-group-item list-group-flex row">
                                         <!-- Primo gruppo -->
-                                        <div class="col-md-3">
+                                        <div class="col-sm-4 col-md-3">
                                             <div class="image-container-list-group">
                                                 <img src="img/class-avatar.jpg" alt="Avatar">
                                             </div>
@@ -522,13 +522,13 @@
                                         </div>
 
                                         <!-- Secondo gruppo -->
-                                        <div class="list-group-flex-2 col-md-6 text-center">
-                                            <span class="col-md-3">22 Feb 2021</span>
-                                            <span class="col-md-2">20%</span>
-                                            <span class="col-md-3"><span class="green-button">Done</span></span>
+                                        <div class="list-group-flex-2 col-sm-8 col-md-6 text-center">
+                                            <span class="col-md-3 principal-main-smartphone-none">22 Feb 2021</span>
+                                            <span class="col-md-2 principal-main-smartphone-none">20%</span>
+                                            <span class="col-sm-6 col-md-3"><span class="green-button">Done</span></span>
 
                                             <!-- Inserimento dei due bottoni -->
-                                            <span class="col-md-4">
+                                            <span class="col-sm-6 col-md-4">
                                                 <button type="button" class="btn btn-outline-secondary"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary"><i

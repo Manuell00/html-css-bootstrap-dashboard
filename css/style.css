@@ -229,6 +229,8 @@ main {
 
 
 
+
+
 /* OFFCANVAS */
 .offcanvas {
     --bs-offcanvas-width: 600px;
@@ -356,4 +358,48 @@ main {
 
 /* PHONE */
 /* Versione phone */
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+
+    /* Sistemo il jumbotron */
+
+    /* Modifico il flex in modo che si dispongano per colonne */
+    #jumbotron>.row{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #jumbotron {
+        height: auto;
+        background-color: dodgerblue;
+        width: 100%;
+    }
+
+    /* Do un ordine diverso alle varie sezioni */
+    #boolean-title-jumbotron{
+        align-self: flex-start;
+        order: 2;
+        margin-top: 50px;
+    }
+    
+    #boolean-number-students-jumbotron{
+        order: 3;
+    }
+    
+    /* Imposto le dimensioni del font del jumbotron */
+    #boolean-title-jumbotron h3{
+        font-size: 40px;
+    }
+    .jumbo-text{
+        font-size: 20px;
+    }
+
+    .circle-text-jumbotron{
+        font-size: 18px;
+    }
+
+    /* Sistemo il principal-main */
+    .principal-main-smartphone-none{
+        display: none;
+    }
+}
